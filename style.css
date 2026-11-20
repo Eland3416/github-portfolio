@@ -11,3 +11,34 @@
 @media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:75px;gap:15px}.hero-visual{height:340px}.hero-copy{max-width:650px}.about-grid{gap:35px}.skills-grid{grid-template-columns:repeat(2,1fr)}.contact-section{gap:35px}.facts-grid div{padding-inline:14px}}
 @media(max-width:620px){.container{width:min(100% - 36px,1120px)}.site-header{height:66px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:65px;left:0;right:0;padding:20px 24px 25px;background:#152135;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:17px}.nav-links.open{display:flex}.nav-links .nav-contact{text-align:center}.hero{min-height:auto;padding-top:65px;padding-bottom:50px}h1{font-size:43px;letter-spacing:-1.8px}.hero-description{font-size:14px}.hero-meta{flex-wrap:wrap}.hero-visual{height:300px}.orbit-one{width:290px;height:220px}.orbit-two{width:240px;height:310px}.profile-card{width:190px;height:220px}.profile-initials{width:90px;height:90px;font-size:34px}.tag-code{right:0;top:35px}.tag-terminal{left:0;bottom:35px;font-size:9px}.facts-grid{grid-template-columns:repeat(2,1fr);gap:20px}.facts-grid div{border:0;padding:0}.section{padding-top:75px;padding-bottom:75px}.about-grid,.contact-section,.resume-panel{grid-template-columns:1fr;gap:25px}.about-note{margin-top:20px}.skills-grid{grid-template-columns:1fr 1fr;gap:10px}.skill-card{padding:17px 13px}.skill-card h3{font-size:14px}.section-heading-row{display:block}.project-count{display:block;padding:0}.projects-grid{grid-template-columns:1fr}.project-featured{grid-column:auto;display:block}.project-featured .project-art{min-height:210px}.project-featured .project-content{padding:23px}.project-content p{min-height:0}.resume-section{padding:65px 0 45px}.resume-preview{height:230px}.resume-sheet{transform:scale(.8) rotate(5deg)}.footer-inner{flex-direction:column;gap:12px;align-items:flex-start}.footer-inner>span:nth-child(2){order:3}}
 @media(max-width:380px){.skills-grid{grid-template-columns:1fr}.hero-actions{flex-direction:column;align-items:stretch}.button{width:100%}}
+
+/* Professional Headshot */
+
+.headshot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.professional-headshot {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.professional-headshot:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .professional-headshot {
+    width: 180px;
+    height: 180px;
+  }
+}
